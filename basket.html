@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-latest.min.js"></script> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="basket.css">
+    <script src="pt1.js"></script>
+</head>
+<body>
+    <div id="header-wrap">
+        <div id='header-meta'>
+            <div id='logo'>
+                <a href="#"><h1>TicketShop</h1></a>
+                  <!-- <p>종합 문화생활 티켓 예매사이트</p> -->
+            </div>
+            <div id='login_menu'>
+              <ul>
+                  <li><a href="basket.html">MyPage</a></li>
+                  <li><a href="contact.html">ContactUs</a></li>
+              </ul>
+            </div>
+          </div>
+        <div id='header-nav'>
+          <div id='menu'onmouseover="func_open_ct()">
+            <nav>
+              <ul style="display:flex;" onmouseleave="func_close_ct()">
+                <li><h3><a href="#" class='nav'>Performance</a></h3>
+                  <div id="menu_tmp" style="display: none; background-color: white; position:absolute; margin-top:3px; left:0; width: 100%; height:310px;"></div>
+                  <dl class="over_menu" style='display:none;'>
+                    <dt>
+                      <h4><a href="#">Performance</a></h4>
+                    </dt>
+                    <dd>
+                      <h4><a href="#">concert</a></h4>
+                    </dd>
+                    <dd>
+                      <h4><a href="#">movie</a></h4>
+                    </dd>
+                    <dd>
+                      <h4><a href="#">theater</a></h4>
+                    </dd>
+                    <dd>
+                      <h4><a href="#">exhibition</a></h4>
+                    </dd>
+                    <dd>
+                      <h4><a href="#">ETC_festival</a></h4>
+                    </dd>
+                  </dl>
+                </li>
+                <li><h3><a href="#" class='nav'>Location</a></h3>
+                  <dl class="over_menu" style='display:none;'>
+                    <dt>
+                      <h4><a href="#">Location</a></h4>
+                    </dt>
+                    <dd>
+                      <h4><a href="#">concert</a></h4>
+                    </dd>
+                    <dd>
+                      <h4><a href="#">movie</a></h4>
+                    </dd>
+                  </dl>
+                </li>
+                <li><h3><a href="#">Reserve</a></h3>
+                  <dl class="over_menu" style='display:none;'>
+                    <dt>
+                      <h4><a href="#">Reserve</a></h4>
+                    </dt>
+                    <dd>
+                      <h4><a href="#">빠른예매</a></h4>
+                    </dd>
+                    <dd>
+                      <h4><a href="#">상영스케줄</a></h4>
+                    </dd>
+                  </dl> 
+                </li>
+                <li><h3><a href="#">Store</a></h3>
+                  <dl class="over_menu" style='display:none;'>
+                    <dt>
+                      <h4><a href="#">Store</a></h4>
+                    </dt>
+                    <dd>
+                      <h4><a href="#">관람권</a></h4>
+                    </dd>
+                    <dd>
+                      <h4><a href="#">기프트카드</a></h4>
+                    </dd>
+                    <dd>
+                      <h4><a href="#">콤보</a></h4>
+                    </dd>
+                    <dd>
+                      <h4><a href="#">스낵</a></h4>
+                    </dd>
+                    <dd>
+                      <h4><a href="#">음료</a></h4>
+                    </dd>
+                    <dd>
+                      <h4><a href="#">플레이존</a></h4>
+                    </dd>
+                  </dl> 
+                </li>
+                <li><h3><a href="#">Benefit</a></h3>
+                  <dl class="over_menu" style='display:none;'>
+                    <dt>
+                      <h4><a href="#">Benefit</a></h4>
+                    </dt>
+                    <dd>
+                      <h4><a href="#">할인정보</a></h4>
+                    </dd>
+                    <dd>
+                      <h4><a href="#">제휴정보</a></h4>
+                    </dd>
+                    <dd>
+                      <h4><a href="#">리뷰페이지</a></h4>
+                    </dd>
+                    <dd>
+                      <h4><a href="#">VIP라운지</a></h4>
+                    </dd>
+                    </dl>
+                </li>
+              </ul>
+            </nav>
+          </div>
+            <div id='search_content'>
+                <input id='txt' type="text">
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+      <div id='purchase'>
+        <div style="margin: 100px;">장바구니</div>
+        <div>
+          <table id='itemList' style="margin: 100px;">
+            <tr>
+              <td>상품사진</td>
+              <td>상품정보</td>
+              <td>수량</td>
+              <td>가격</td>
+            </tr>
+            <tr>
+              <td>사진</td>
+              <td>정보</td>
+              <td>수</td>
+              <td>단가</td>
+            </tr>
+          </table>
+          <div id='rollup'>
+
+          </div>
+        </div>
+      </div>
+      <div id='costomer_center'>
+          <content id='notice_wrap'>
+            <div id='notice'>
+              <h3>공지사항</h3>
+              <p>[기타]22년 VIP 선정 기준 변경 및 추가 기준 관련사항</p>
+              <span>더보기</span>
+            </div>
+            <div id='customer'>
+              <h3>고객센터</h3>
+              <strong>1111-1111</strong>
+              <p>고객센터 운영시간 (평일 09:00~18:00)</p>
+              <p style='color:gray;'>업무시간 외 자동응답 안내 가능합니다.</p>
+            </div>
+          </content>
+          <content id='download'>
+            <h3>앱 다운로드</h3>
+            <span>TicketShop앱에서 더 편리하게 사용하세요</span>
+            <img style="width:80px; height:80px; padding: 0 20px;" src="img/17.jpg" alt="...">
+            <p>QR코드를 스캔하고 앱설치 페이지로 바로 이동하세요</p>
+          </content>
+      </div>
+    </div>
+    <div id='footer'>
+        <address>(00000)서울특별시 강남구 ***로 ***길 **, #####(***)</address>
+        <dl>
+          <dt>대표이사 : 홍길동</dt>
+          <dt>사업자등록번호 : 123-45-67890</dt>
+          <dt>통신판매업신고번호 : 1234-서울강남-5678</dt>
+        </dl>
+      <p class='copyright'>VVS VVS. All Right Reserved</p>
+    </div>
+    <script>
+                
+  </script>
+</body>
+</html>
