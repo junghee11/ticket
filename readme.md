@@ -8,5 +8,5 @@
 <h3 style="padding:10px; border-bottom: 1px solid rgb(195, 193, 193);">🌿Preview</h3>
 <!-- <hr/> -->
 
-<img src="img/" alt="login">
+<img src="./img/ticketshop.jpg" alt="main">
 <h5><a href="https://junghee11.github.io/ticket/main">페이지로 이동</a></h5>
