@@ -8,5 +8,5 @@
 <h3 style="padding:10px; border-bottom: 1px solid rgb(195, 193, 193);">🌿Preview</h3>
 <!-- <hr/> -->
 
-<img src="Campers/WebContent/img/login&shop.gif" alt="login">
+<img src="img/" alt="login">
 <h5><a href="https://junghee11.github.io/ticket/main">페이지로 이동</a></h5>
